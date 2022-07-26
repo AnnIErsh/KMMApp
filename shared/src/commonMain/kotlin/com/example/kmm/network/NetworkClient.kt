@@ -13,7 +13,7 @@ class NetworkClient {
         try {
             val result = httpClient.get(path).body<T>()
             return Result.success(result)
-        }catch (e: Exception) {
+        } catch (e: Exception) {
             return Result.failure(e)
         }
     }
