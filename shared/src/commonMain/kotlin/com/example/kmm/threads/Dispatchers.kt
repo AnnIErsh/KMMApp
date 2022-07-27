@@ -1,4 +1,6 @@
 package com.example.kmm.threads
 
-class Dispatchers {
-}
+import kotlinx.coroutines.CoroutineDispatcher
+
+expect val ioDispatcher: CoroutineDispatcher
+expect val uiDispatcher: CoroutineDispatcher
