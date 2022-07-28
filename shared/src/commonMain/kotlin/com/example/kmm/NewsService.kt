@@ -7,7 +7,7 @@ class NewsService constructor(private val networkClient: NetworkClient) {
 
     suspend fun loadNews():Result<NewsList> {
         val data = networkClient.getData<NewsList>(LOAD_CRUNCH)
-        print(data)
+        //print(data)
         return data
     }
 
